@@ -1,0 +1,47 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  min-width: 200px;
+  min-height: 120px;
+}
+
+.labs-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  .labs-icon {
+    margin-right: 10px;
+  }
+
+  .labs-title {
+    flex: 1 1 auto;
+  }
+
+  .labs-identifier {
+    font-size: 10px;
+    justify-self: flex-end;
+  }
+}
+
+.labs-content {
+  display: flex;
+  margin-top: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.labs-more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.labs-chart {
+  background: url('/assets/chart.svg') center center no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 400px;
+  display: flex;
+}

@@ -1,0 +1,12 @@
+<div class="labs-header">
+  <i [class]="'fas labs-icon ' + icon"></i>
+  <div class="labs-title">{{title}}</div>
+</div>
+<div class="labs-content">
+  <div *ngFor="let item of items" class="labs-list-item">
+    <mat-checkbox [(ngModel)]="item.checked" color="accent">
+      <div class="labs-description">
+      {{item.title}}</div>
+    </mat-checkbox>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="labs-content">
+  <mat-progress-spinner
+    color="red"
+    [strokeWidth]="10"
+    [diameter]="70"
+    [value]="fix ? 100 : value">
+  </mat-progress-spinner>
+  <div class="labs-value">{{value}}</div>
+</div>
+<div class="labs-footer">
+  {{title}}
+</div>
+<button mat-icon-button class="labs-more">
+  <i class="fas fa-ellipsis-v"></i>
+</button>

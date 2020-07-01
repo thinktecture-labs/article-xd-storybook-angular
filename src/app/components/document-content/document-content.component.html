@@ -1,0 +1,13 @@
+<div class="labs-header">
+  <i [class]="'fas labs-icon ' + icon"></i>
+  <div class="labs-title">{{title}}</div>
+  <div class="labs-identifier">{{identifier}}</div>
+</div>
+<div class="labs-content">
+  <ng-container *ngIf="preview">{{preview}}</ng-container>
+  <div class="labs-chart" *ngIf="!preview"></div>
+
+</div>
+<button mat-icon-button class="labs-more">
+  <i class="fas fa-ellipsis-v"></i>
+</button>

@@ -1,0 +1,25 @@
+<div class="labs-title">Dashboard</div>
+<div class="labs-main">
+  <labs-card [show]="showCards">
+    <labs-document-content icon="fa-file-medical-alt" title="Document" identifier="2020-07-02#42"
+                           preview="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt…"></labs-document-content>
+  </labs-card>
+  <labs-card [show]="showCards">
+    <labs-measure-content [value]="values[0]" title="Measure 1"></labs-measure-content>
+  </labs-card>
+  <labs-card [show]="showCards">
+    <labs-measure-content [value]="values[1]" title="Measure 2"></labs-measure-content>
+  </labs-card>
+  <labs-card [show]="showCards">
+    <labs-measure-content [value]="values[2]" title="Measure 3"></labs-measure-content>
+  </labs-card>
+  <div>
+    <labs-card [show]="showCards" style="width: 100%">
+      <labs-document-content icon="fa-chart-area" title="Report 1" identifier="2020-07-02#45"></labs-document-content>
+    </labs-card>
+    <labs-file-tree></labs-file-tree>
+  </div>
+  <labs-card [show]="showCards" class="labs-table">
+    <labs-list-content icon="fa-chart-area" title="Report" [items]="tasks$ | async"></labs-list-content>
+  </labs-card>
+</div>

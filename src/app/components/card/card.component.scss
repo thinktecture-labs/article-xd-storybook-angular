@@ -1,0 +1,44 @@
+:host {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  user-select: none;
+
+  @media (hover) {
+    .labs-content-wrapper {
+      opacity: .6;
+      transition: opacity .3s ease-in-out;
+      cursor: pointer;
+    }
+
+    &:hover {
+      .labs-content-wrapper {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.labs-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  height: 100%;
+}
+
+.labs-content {
+  z-index: 1;
+  padding: 20px;
+  flex: 1 1 auto;
+}
+
+.labs-border-bottom {
+  height: 4px;
+  max-height: 4px;
+  flex: 1 1 auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px) brightness(165%) saturate(160%);
+}

@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.labs-logo {
+  width: 70px;
+  height: 50px;
+  bottom: 90px;
+  left: 30px;
+  position: fixed;
+  background: #81A4A7;
+  mask-image: url('/assets/logo_weiss_vector.svg');
+  mask-repeat: no-repeat;
+  mask-position: center center;
+}
+
+.labs-header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+labs-user {
+  margin-left: 5px;
+}

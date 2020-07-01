@@ -1,0 +1,40 @@
+:host {
+  position: relative;
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  position: absolute;
+  animation: rotation 8s infinite reverse;
+}
+
+img {
+  max-width: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(20deg);
+  }
+
+  60% {
+    transform: rotate(220deg);
+  }
+
+  80% {
+    transform: rotate(350deg);
+  }
+
+  80% {
+    transform: rotate(-150deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}

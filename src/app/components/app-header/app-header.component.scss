@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+
+.labs-inner-container {;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 20px;
+  clip-path: polygon(100% 0, 100% 0%, 100% 100%, 10% 100%, 0% 50%, 0% 0%);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px) brightness(115%);
+}
+
+
+
+.labs-border-top {
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px) brightness(165%) saturate(160%);
+}
+
+
+button {
+  margin-right: 10px;
+}

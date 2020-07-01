@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #E0E2D7;
+  user-select: none;
+  @media (hover){
+    cursor: pointer;
+  }
+}
+
+.labs-folder {
+  background-color: rgba(165, 164, 146, .5);
+  backdrop-filter: blur(10px) saturate(120%) brightness(120%);
+  padding: 10px;
+  margin-top: 5px;
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+.labs-file{
+  margin-left: 10px;
+  background-color: rgba(52, 84, 94, 0.5);
+  backdrop-filter: blur(10px) saturate(120%) brightness(120%);
+  padding: 10px;
+  margin-top: 5px;
+  border-left: 2px solid transparent;
+
+  &.labs-active {
+    backdrop-filter: blur(10px) saturate(120%) brightness(160%);
+    border-left: 2px solid #707070;
+  }
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+.labs-file-wrapper {
+  margin-left:15px; border-left: 2px solid #707070;
+}

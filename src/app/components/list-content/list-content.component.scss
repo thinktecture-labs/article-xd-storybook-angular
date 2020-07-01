@@ -1,0 +1,29 @@
+
+.labs-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  .labs-icon {
+    margin-right: 10px;
+  }
+
+  .labs-title {
+    flex: 1 1 auto;
+  }
+}
+
+.labs-content {
+  min-width: 300px;
+  padding: 20px 0;
+  flex: 1 1 auto;
+}
+
+.labs-list-item {
+  height: 48px;
+}
+
+.labs-description {
+  margin-left: 10px;
+  white-space: pre-wrap;
+}
